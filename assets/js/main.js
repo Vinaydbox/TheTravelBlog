@@ -161,9 +161,9 @@
   /**
    * Initiate glightbox 
    */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
+  // const glightbox = GLightbox({
+  //   selector: '.glightbox'
+  // });
 
   /**
    * Porfolio isotope and filter
@@ -196,9 +196,9 @@
   /**
    * Initiate portfolio lightbox 
    */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
+  // const portfolioLightbox = GLightbox({
+  //   selector: '.portfolio-lightbox'
+  // });
 
   /**
    * Portfolio details slider
@@ -228,6 +228,8 @@
 // form validation begins
 // email = document.querySelector("#email1").value;
 // password = document.querySelector("#password1").value;
+
+/*
 loginpage = document.querySelector("#loginpage");
 welcomemsg = document.querySelector("#welcomemsg");
 
@@ -288,3 +290,6 @@ function formvalidate() {
 }};
 
 // from validation ends
+*/
+
+
