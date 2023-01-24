@@ -1,5 +1,6 @@
 let response="empty";
 const postRequest=new XMLHttpRequest();
+let tableBody = document.getElementById("tablebody")
 postRequest.open("POST","https://reqres.in/api/users");
 postRequest.setRequestHeader("Content-type","application/Json");
 var psh=document.getElementById("push");
@@ -7,7 +8,9 @@ psh.addEventListener("click",function(){
      post();
 });
 
-function renderCard(email, first_name,last_name)
+
+
+function renderCard(first_name,last_name,email)
 {
     return `
     <tr>
@@ -28,6 +31,7 @@ function post(){
     postRequest.onload=function(){
         datax=JSON.parse(postRequest.responseText);
         console.log(datax);
-        renderCard(datax.firstName,datax.lastName,datax.Email);
+        alert(datax.firstName);
+        tableBody.innerHTML += renderCard(datax.firstName,datax.lastName,datax.Email);
     }
 }

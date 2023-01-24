@@ -18,7 +18,7 @@ for(i=0;i<titles.length;i++){
     console.log(desc[i]);
     des =desc[i];
     
-    let x=renderCard(title,desc);
+    let x=renderCard(title,des);
     console.log("HERE");
     container.innerHTML+=x;
 }
