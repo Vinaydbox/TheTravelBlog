@@ -58,7 +58,7 @@
 		<!-- Login pop begins -->
 		  
 		<div class="container butter" id="Butter">
-      <a href="#" class="btn btn-success btn-networkround bx-pull-right mx-2 active">Admin Login</a>
+      <a href="./adminIndex.html" class="btn btn-success btn-networkround bx-pull-right mx-2 active">Admin Dashboard</a>
 			
 		</div>
 
@@ -70,7 +70,7 @@
   <!-- Credit card form -->
 <section class="mt-5 d-flex justify-content-center align-content-center">
     <div class="row">
-      <div class="col-md-12 mb-4">
+      <div class="col-md-12 mb-4 d-flex justify-content-center align-content-center">
         <div class="card mb-4">
           <div class="card-header py-3">
             <h5 class="mb-0 text-center">Add New Card</h5>
@@ -79,24 +79,30 @@
             <form>
               <!-- 2 column grid layout with text inputs for the first and last names -->
               <div class="row mb-4">
-                <div class="col">
+                <div class="col-md-12">
                   <div class="form-outline">
-                      <label class="form-label" for="titlecard">Title</label>
+                      <label class="form-label" for="titlecard">Service Title</label>
                     <input type="text" id="titlecard" class="form-control" />
                   </div>
                 </div>
                 <br>
                 <hr>
-                <div class="col">
+                <div class="col-md-12">
                   <div class="form-outline">
-                      <label class="form-label" for="desccard">Description</label>
+                      <label class="form-label" for="desccard">Service Description</label>
                     <input type="text" id="desccard" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-outline">
+                      <label class="form-label" for="carimg">Service Image URL</label>
+                    <input type="text" id="carimg" class="form-control" />
                   </div>
                 </div>
             </div>
             <div class="d-flex justify-content-center align-content-center">
 
-                <button type="button" id="push" class="btn btn-outline-primary">Push Card</button>
+                <button type="submit" id="push" class="btn btn-outline-primary">Push Card</button>
             </div>
   
               
@@ -112,6 +118,7 @@
 
   <!--Admin page ends-->
 
+ 
 
 
 
@@ -127,6 +134,8 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <script src="./assets/js/cardpush.js"></script>
   <script src="./assets/js/login.js"></script>
   <script src="assets/js/main.js"></script>
@@ -137,7 +146,10 @@
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
 	<!-- Bootstrap JS -->
 	<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
-  
+  <script>
+    localStorage.setItem('adminEmail', 'admin@gmail.com');
+    localStorage.setItem('adminPassword', 'admin');
+  </script>  
 
 </body>
 

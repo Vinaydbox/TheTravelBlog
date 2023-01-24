@@ -22,10 +22,15 @@ function checkLogin(){
 	var userName = document.getElementById("email1");
 	var userPwd = document.getElementById("password1");
 	var rememberMe = document.getElementById("rememberMe");
+	if(userName.value == localStorage.getItem("adminEmail") && userPwd.value == localStorage.getItem("adminPassword"))
+	{
+		window.location.href = "./adminIndex.html";
+	}
 
 	if(userName.value == storedName && userPwd.value == storedPassword )
 	{
 		// alert("WOW!!! You have logged in...")
+		
 		window.location.href = "./homepage.html";
 		// document.getElementById("profile").innerHTML = localStorage.getItem("storedFirstName") + " " + localStorage.getItem("storedLastName");
 		// document.getElementById("profile").innerHTML = localStorage.getItem("storedFirstName");
@@ -33,7 +38,10 @@ function checkLogin(){
 	else{
 		alert("Invalid Login")
 	}
-}
+
+	adminLogin = localStorage.setItem("Loggedin", "true");
+	
+}	
 
 document.getElementById("profile").innerHTML = localStorage.getItem("firstName") + " " + localStorage.getItem("lastName");
 document.getElementById("userNameAfterLogin").innerHTML = localStorage.getItem("firstName") + " " + localStorage.getItem("lastName");

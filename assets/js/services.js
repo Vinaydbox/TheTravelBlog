@@ -1,11 +1,11 @@
 let container=document.querySelector("#cardSection");
-function renderCard(tit,desc)
+function renderCard(titl,desc)
 {
     return (`
     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
         <div class="icon-box">
             <div class="icon"><i class="bx bx-file"></i></div>
-            <h4><a href="">${tit}</a></h4>
+            <h4><a href="">${titl}</a></h4>
             <p>${desc}</p>
         </div>
     </div>
