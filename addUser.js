@@ -31,7 +31,7 @@ function post(){
     postRequest.onload=function(){
         datax=JSON.parse(postRequest.responseText);
         console.log(datax);
-        alert(datax.firstName);
+        alert(datax.firstName + " has been added to user list.");
         tableBody.innerHTML += renderCard(datax.firstName,datax.lastName,datax.Email);
     }
 }

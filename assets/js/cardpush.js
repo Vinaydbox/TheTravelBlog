@@ -3,6 +3,7 @@ cardDescription=document.getElementById("desccard");
 
 function getvals(){
     //get exisiting arr
+    console.log("ADDDING")
     let titlearr=[]
     let descarr=[]
     if(localStorage.getItem('title')!=null){
@@ -14,8 +15,10 @@ function getvals(){
     localStorage.setItem("title",JSON.stringify(titlearr));
     localStorage.setItem("description",JSON.stringify(descarr));
 }
-var psh=document.getElementById("push");
+var psh=document.getElementById("pushCard");
 psh.addEventListener("click",function(){
+    console.log("HERE");
     if(cardTitle.value!="" && cardDescription.value!="")
         getvals();
+        alert("Service has been added successfully!!!")
 })
