@@ -1,7 +1,7 @@
 let response="empty";
 const postRequest=new XMLHttpRequest();
 let tableBody = document.getElementById("tablebody")
-postRequest.open("POST","https://reqres.in/api/users");
+postRequest.open("POST","http:127.0.0.1:3000/useradd");
 postRequest.setRequestHeader("Content-type","application/Json");
 var psh=document.getElementById("push");
 psh.addEventListener("click",function(){

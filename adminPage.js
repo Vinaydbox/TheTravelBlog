@@ -2,7 +2,7 @@
 
 const httRequest = new XMLHttpRequest();
 let tablebody = document.getElementById("tablebody");
-httRequest.open("GET","https://reqres.in/api/users?page=1");
+httRequest.open("GET","http:127.0.0.1:3000/userdata");
 httRequest.send();
 var data = "empty"
 httRequest.onload = function() {
