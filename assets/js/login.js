@@ -47,6 +47,7 @@ function checkLogin(){
 	
 }	
 
-document.getElementById("profile").innerHTML = localStorage.getItem("firstName") + " " + localStorage.getItem("lastName");
+// document.getElementById("profile").innerHTML = localStorage.getItem("firstName") + " " + localStorage.getItem("lastName");
+$("#profile").text("Hi, "+localStorage.getItem("firstName") + " " + localStorage.getItem("lastName"));
 document.getElementById("userNameAfterLogin").innerHTML = localStorage.getItem("firstName") + " " + localStorage.getItem("lastName");
 document.getElementById("userEmailAfterLogin").innerHTML = localStorage.getItem("emailAdd");

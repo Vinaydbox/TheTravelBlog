@@ -7,7 +7,7 @@ httRequest.send();
 var data = "empty"
 httRequest.onload = function() {
     data = JSON.parse(httRequest.responseText);
-    console.log(data);[  ]
+    console.log(data);
     users_data = data.data;
     for(var i=0; i<users_data.length; i++){
         tablebody.innerHTML += renderUser(users_data[i].email,users_data[i].first_name,users_data[i].last_name);
