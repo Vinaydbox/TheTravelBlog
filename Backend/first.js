@@ -1,11 +1,11 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
 var fs = require("fs");
 const cors = require("cors");
-app.use(cors())
+app.use(cors());
 app.use(express.json());
 
-app.listen(3000)
+app.listen(3000);
 
 app.get('/userdata', function (req, res) {
 	fs.readFile("./Backend/users.json", function (err, data) {
